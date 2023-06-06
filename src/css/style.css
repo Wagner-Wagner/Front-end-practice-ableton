@@ -1,0 +1,361 @@
+@font-face{
+    font-family: test;
+    src: url(./futura/futura-pt-medium.b650e9c2aaf6.woff2) format(truetype);
+}
+
+:root{
+    --yellow: #fbffa7;
+    --light-blue : #b1c5ff;
+    --green: #b6ffc0;
+    --orange: #ff764d;
+    --purple: #d5b3ff;
+    --dark-blue: #0000ff;
+    --gray: #eee;
+}
+
+*, 
+::before, 
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F3F3F3;
+    font-family: test;
+}
+
+/*  --  First nav  --  */
+
+.main{
+    width: 1600px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+nav, .menu, ul{
+    display: flex;
+    align-items: center;
+}
+.first-nav{
+    width: 100%;
+    height: 4.3em;
+    justify-content: space-between;
+}
+
+.menu{
+    margin: 0 2.6em;
+}
+
+.menu a img{
+    width: 60px;
+    height: 28px;
+}
+
+.menu ul{
+    margin: 0 1.2em;
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 0 1.3em;
+}
+
+.menu ul li a{
+    font-size: 1.21em;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.log-in{
+    margin: 0 2.5em;
+}
+
+.log-in a:first-child{
+    color: var(--dark-blue);
+    font-size: 1.25em;
+    margin-right: 1.5em;
+}
+
+.line{
+    width: 100%;
+    border: solid 1px #F3F3F3;
+}
+
+/*  --  Second nav  --  */
+
+main .page-about{
+    width: 100%;
+    height: 100%;
+}
+
+main .page-about header{
+    width: 1333px;
+    height: 800px;
+    background-image: url(../img/header.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+header p{
+    font-size: 8.9em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FD5948;
+}
+
+.second-nav{
+    width: 100%;
+    height: 4.3em;
+    position: sticky;    
+    top: 0;
+    background: transparent;
+
+}
+.second-nav ul{
+    margin: 0 2.6em;
+}
+
+.second-nav ul li{
+    list-style: none;
+    margin-right: 2.5em;
+}
+
+/*  -- First article  --  */
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+/*  --  section color cube  --  */
+
+section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-cube{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58.5%;
+    height: 100%;
+    background-color: var(--yellow);
+}
+
+.all-photos{
+    width: 1333px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.photo-right{
+   background-image: url(../img/photo-1.jpg);
+   background-size: cover;
+    width: 41.5em;
+    height: 41.5em;
+}
+
+.photo-left{
+    background-image: url(../img/photo-2.jpg);
+    width: 33em;
+    height: 26em;
+}
+
+.video{
+    width: 50%;
+    margin: 100px auto;
+    position: relative;
+}
+
+.video p{
+    font-size: 0.8em;
+}
+
+.player{
+    border: solid red 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player svg, path{
+    font-size: 5em;
+    color: blue;
+}
+
+/*  --  Second cube section GREEN CUBE --  */
+
+.green-cube-container{
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    margin-top: 125px;
+}
+
+.green-cube{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 933px;
+    background-color: var(--green);
+}
+
+.left-side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.right-side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+
+/*  --  Big image  --  */
+
+.big-img{
+    background-image: url(../img/poster-meet-the-makers.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1333px;
+    height: 750px;
+    margin: 125px auto 0;
+}
+
+/*  --  Purple cube section */
+
+.purple-container{
+    width: 100%;
+    height: 933px;
+    display: flex;
+    position: relative;
+    margin-top: 125px;
+    margin-bottom: 125px;
+}
+
+.purple-cube{
+    background-color: var(--purple);
+    width: 1067px;
+    height: 933px;
+    position: absolute;
+    top: 0;
+    right: 16.5%;
+}
+
+.purple-container .left-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.purple-container .right-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+}
+
+/*  -- Bleu cube section  --  */
+
+.blue-container{
+    width: 1333px;
+    height: 676px;
+    margin: 125px auto 125px;
+    display: flex;
+}
+
+.blue-container .left-img{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/photo-8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blue-container .right-img{
+    width: 50%;
+    height: 100%;
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blue-container .right-img p{
+    width: 65%;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.blue-container .right-img p a{
+    margin-top: 25px;
+    color: var(--dark-blue);
+    margin-top: 25px;
+}
+
+/*  -- Footer  --  */
+
+footer{
+    width: 100%;
+    height: 100vh;
+    border: solid rgb(0, 255, 68) 2px;
+}
+
+.footer-container{
+    width: 1333px;
+    height: 700px;
+    border: solid red 2px;
+}
+
+.top-container{
+    width: 100%;
+    height: 219px;
+    border: solid rgb(51, 0, 255) 2px;
+}
+
+.bottom-container{
+    width: 100%;
+    height: 219px;
+    border: solid rgb(255, 191, 0) 2px;
+}

@@ -1,0 +1,25 @@
+@font-face{
+    font-family: light-font;
+    src: url(./futura/futura\ light\ bt.ttf);
+}
+
+.page-about-text{
+    max-width: 800px;
+    margin: 5em auto;
+    line-height: 1.5;
+}
+
+.page-about-text p:first-child{
+    font-size: 1.8em;
+}
+
+.page-about-text p:last-child{
+    margin-top: 1em;
+    font-size: 1.1em;
+    font-family: light-font;;
+}
+
+.page-about-text span{
+    color: var(--dark-blue);
+}
+
